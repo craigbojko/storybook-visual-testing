@@ -23,4 +23,11 @@ describe('Button component', () => {
 
     cy.get('@onClickSpy').should('have.been.calledOnceWithExactly', 'Clicked')
   })
+
+  it('should match snapshot', () => {
+    mount(<Primary onClick={onClickSpy} />)
+
+    // cy.get('button').compareSnapshot('Button', 0.1)
+    cy.compareSnapshot('Button')
+  })
 })

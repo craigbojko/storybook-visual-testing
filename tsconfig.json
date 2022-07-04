@@ -3,10 +3,11 @@
     "allowJs": true,
     "baseUrl": ".",
     "esModuleInterop": true,
-    "types": [
-      "cypress"
-    ],
     "noEmit": true,
+    "types": [
+      "cypress",
+      "cypress-visual-regression"
+    ]
   },
   "include": [
     "**/*.*"
