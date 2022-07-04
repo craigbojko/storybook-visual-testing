@@ -2,6 +2,7 @@
   "compilerOptions": {
     "allowJs": true,
     "baseUrl": ".",
+    "esModuleInterop": true,
     "types": [
       "cypress"
     ],
@@ -11,6 +12,7 @@
     "**/*.*"
   ],
   "files": [
-    "**/*.ts"
+    "**/*.ts",
+    "**/*.tsx",
   ],
 }
