@@ -27,7 +27,6 @@ describe('Button component', () => {
   it('should match snapshot', () => {
     mount(<Primary onClick={onClickSpy} />)
 
-    // cy.get('button').compareSnapshot('Button', 0.1)
-    cy.compareSnapshot('Button')
+    cy.get('button').compareSnapshot('Button', 0.1)
   })
 })
